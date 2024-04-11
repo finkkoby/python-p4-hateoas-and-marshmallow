@@ -15,6 +15,8 @@ app.json.compact = False
 migrate = Migrate(app, db)
 db.init_app(app)
 
+ma = Marshmallow(app)
+
 api = Api(app)
 
 class Index(Resource):
